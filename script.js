@@ -2,8 +2,10 @@ const inputField = document.querySelector('.input');
 const buttons = document.querySelector('.buttons');
 
 function append(e){
+    if(e!==undefined){
     inputField.textContent += e;
-    inputField.scrollLeft = inputField.scrollWidth; 
+    inputField.scrollLeft = inputField.scrollWidth;
+    }
 }
 
 function clearOne(){
